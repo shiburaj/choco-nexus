@@ -2,6 +2,7 @@
 Software Setup Tool for RCOE with NEXUS
 
 ## For Chocolatey
+Run powershell with Administrative Privilidge
 ```
 // Remove Default
 choco source remove -n chocolatey
