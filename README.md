@@ -125,5 +125,19 @@ choco install -y `
   audacity gimp inkscape blender ffmpeg obs-studio kdenlive
 ```
 
----
+## ▶️ How to Use **`packages.config`**
+
+1. Save the file above as **`packages.config`** (anywhere, e.g., Desktop or USB).
+2. Open **PowerShell as Administrator**.
+3. Run:
+
+```powershell
+choco install packages.config -y
+```
+
+```powershell
+choco upgrade all -y
+```
+
+
 
