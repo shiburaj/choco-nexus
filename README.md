@@ -15,8 +15,16 @@ choco source add -n nexus-choco -s http://nexus.rcoe.co.in/repository/choco/ --p
 // Remove Default [Optional]
 choco source remove -n chocolatey
 
-// Test It
-choco install git -y
+// Install Packages
+choco install -y `
+  googlechrome firefox microsoft-edge 7zip winrar notepadplusplus vlc zoom libreoffice-fresh `
+  git vscode python nodejs nvm yarn openjdk docker-desktop postman insomnia cmder conemu `
+  putty winscp filezilla curl wget riot `
+  audacity gimp inkscape blender ffmpeg kdenlive openshot handbrake `
+  pycharm-community eclipse-jee-luna drawio ccleaner texstudio miktex lyx `
+  wireshark sql-server-management-studio mysql.workbench dbeaver heidisql virtualbox `
+  qbittorrent transmission `
+  intellijidea-community sublimetext3 arduino unity codeblocks webstorm gdevelop
 ```
 
 
