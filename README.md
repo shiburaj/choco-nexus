@@ -4,11 +4,16 @@ Software Setup Tool for RCOE with NEXUS
 ## For Chocolatey
 Run powershell with Administrative Privilidge
 ```
-// Remove Default
-choco source remove -n chocolatey
+// Install Powershell
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+
+
 
 // Add Local Repo
-choco source add -n nexus-choco -s http://nexus.rcoe.co.in/repository/choco/
+choco source add -n nexus-choco -s http://nexus.rcoe.co.in/repository/choco/ --priority=1
+
+// Remove Default [Optional]
+choco source remove -n chocolatey
 
 // Test It
 choco install git -y
